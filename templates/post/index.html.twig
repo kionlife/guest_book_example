@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+
+    {% for post in posts %}
+    <div class="container">
+        <div class="head">
+            <h2>{{ post.author }} ({{ post.email }}) wrote:</h2>
+            <i>{{ post.createdAt|date('d.m.Y H:m') }}</i>
+
+        </div>
+        <div class="content">
+            <p>{{ post.message }}</p>
+        </div>
+
+    </div>
+    {% endfor %}
+{% endblock %}

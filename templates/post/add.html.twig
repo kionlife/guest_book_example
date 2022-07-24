@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form class="addForm" action="{{ path('app_posts_create') }}" method="post">
+        <input name="author" type="text" placeholder="Name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="homepage" type="text" placeholder="Homepage URL">
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+        <button type="submit">Add</button>
+    </form>
+</div>
+
+{% endblock %}

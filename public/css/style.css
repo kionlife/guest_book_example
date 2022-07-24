@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: unset;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+    display: flex;
+}
+
+header {
+    padding: 20px 0 20px 0;
+    color: #FFFFFF;
+    background: #2e3436;
+    margin-bottom: 20px;
+}
+
+
+.logoBlock {
+    margin-right: auto;
+}
+
+.head {
+    width: 29%;
+}
+
+.content {
+    width: 100%;
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.addForm input, .addForm textarea {
+    width: 500px;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.addForm button {
+    width: 200px;
+    margin: auto;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2e3436;
+}
+
+footer p {
+    width: 100%;
+}
